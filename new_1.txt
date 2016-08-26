@@ -1,0 +1,23 @@
+﻿<html>
+	<head>
+		<title>завдання 12.4.TASK</title>
+
+		<script type="text/javascript">
+
+			var task1=Math.random();
+				alert(task1);
+    			
+    			alert(Math.round(task1)); //якщо в рандомі task1 менше 0.5 тоді буде виводитись 0, якщо більше або дорівнює 0.5 тоді виводиться 1;
+				alert(Math.ceil(task1)); //завжди 1, бо повернє найменше ціле число, що більше, або дорівнює в рандом діапазоні від 0 до 1;
+				alert(Math.floor(task1)); //завжди 0, бо повернє найбільше ціле число, що менше, або дорівнює в рандом діапазоні від 0 до 1;
+
+				alert(Math.pow(task1, 2));
+				alert(Math.pow(task1, 10));
+				alert(Math.pow(task1, -5));
+				alert(Math.pow(task1, 6));
+		</script>
+
+	</head>
+	<body>
+	</body>
+</html>
