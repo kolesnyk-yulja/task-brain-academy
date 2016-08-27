@@ -1,0 +1,30 @@
+﻿<!-- Task 4.6.2. Ввести назву, ціну за одиницю, кількість купленого товару. Вивести повідомлення про суму покупки і повідомлення: "Дякую за покупку!" -->
+
+<html>
+	<head>
+		<title>4.6. TASK (ДЗ)</title>
+
+		<script type="text/javascript">
+
+			var name_of_product = prompt('Виберіть назву товару:', 'Назва товару' );
+
+			var total_weight = prompt('Вкажіть вагу товару\(кг\):', 'Вага товару');
+			var total_weight = parseInt(total_weight);
+
+			var price_of_product = prompt('Вкажіть ціну товару\(грн.\):', 'Ціна товару');
+			var price_of_product = parseInt(price_of_product)
+
+			var total_cost = price_of_product * total_weight;     
+
+			document.write('Загальна сума покупки: ' + total_cost + 'грн.' + '<br/>');
+
+			document.write('Деталізація: Ви придбали ' + name_of_product + ' вагою ' + total_weight + 'кг' + ' за ціною ' + price_of_product + 'грн' + '<br/>');
+
+			document.write('Дякую за покупку!' + '<hr/>');
+
+		</script>
+
+	</head>
+
+	<body>
+	</body>
