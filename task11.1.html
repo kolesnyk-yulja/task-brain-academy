@@ -14,7 +14,19 @@
 			</script>
 	</head>
 </html>
+<!-- //loop for -->
 
+<html>
+	<head>
+		<title>Завдання 11.1 </title>
+			<script type="text/javascript">
+				var a, b;
+				for (a = 1, b = 5; a =< 10; a++) {
+				 	console.log(a*b)
+				 };
+			</script>
+	</head>
+</html>
 
 		<!-- 	2. Запропонувати користувачеві вказати свій вік, причому якщо вік буде вказано некоректно (менше 5-ти або більше ста років), 
 			то пропонувати здійснювати введення до тих пір, поки не буде введено коректне значення
@@ -28,13 +40,18 @@
 
 			
 			var	cons_age = prompt('вкажіть свій вік', 'вік');
-				cons_age = parseInt(cons_age);
-				min_age = 5;
-				max_age = 100
-				
-			while (cons_age < min_age || cons_age > max_age) {
-				prompt('вкажіть свій вік', 'вік');
-			}
+			var	cons_age = parseInt(cons_age);
+			
+
+			// while (cons_age < 5 || cons_age > 100) {   // зависає
+			// 	var cons_age = prompt('вкажіть свій вік', 'вік') ;
+			// }
+
+			for (var cons_age = prompt('вкажіть свій вік', 'вік'); 
+				cons_age < 5 || cons_age > 100;){
+					prompt('вкажіть свій вік', 'вік')};
+
+
 
 			if (cons_age < 25){
 				alert ('Ви молодий')
