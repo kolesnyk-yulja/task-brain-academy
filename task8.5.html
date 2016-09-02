@@ -8,34 +8,37 @@
 		<title>два числа</title>
 			<script type="text/javascript">
 				var x = prompt( 'Введіть, будь ласка, число 1', 'число 1'); 
-				var x1 = Math.sign(x);
 				var y = prompt( 'Введіть, будь ласка, число 2', 'число 2'); 
+				var x1 = Math.sign(x);
 				var y1 = Math.sign(y);
 				
-				if (x1 == -1) {console.log(x +' - від\'ємне число')}
-				else if (x1 == 0) {console.log('нуль')}
-				else {console.log(x +' - додатнє число')};
+				if (x1 == -1) {
+					console.log(x +' - від\'ємне число')
+				}else if (x1 == 0) {
+					console.log('нуль')
+				}else {console.log(x +' - додатнє число')};
 				
-				if (y1 == -1) {console.log(y +' - від\'ємне число')}
-				else if (y1 == 0) {console.log('нуль')}
-				else {console.log(y +' - додатнє число')};
-				
-				
-				
+				if (y1 == -1) {
+					console.log(y +' - від\'ємне число')
+				}else if (y1 == 0) {
+					console.log('нуль')
+				}else {
+					console.log(y +' - додатнє число')};
+								
 				if (x1 == -1 && y1 == -1){
-					if (x > y){console.log(y + ' more than ' + x)}
-						else if (y > x) {
-							console.log(x + ' more than ' + y)}
-						else {
-							console.log(y + ' = ' + x)}
+					if (x > y){
+						console.log(y + ' more than ' + x)
+					}else if (y > x) {
+						console.log(x + ' more than ' + y)
+					}else {
+						console.log(y + ' = ' + x)}
 				}else if (x > y){
 					console.log(x + ' more than ' + y)
 				}else if(y > x){
 					console.log(y + ' more than ' + x)
-				}else {console.log(y + ' = ' + x)};
+				}else {
+					console.log(y + ' = ' + x)};
 
-//переприсвоить 
-		
 		</script>
 
 	</head>
@@ -79,7 +82,7 @@
 
 			<!-- Перерозподілити значення змінних х і у так, щоб в х виявилося більше з цих значень, а в у - менше.   -->
 			
-
+<html>
 	<head>
 		<title>два числа перерозподіл</title>
 			<script type="text/javascript">
@@ -90,15 +93,8 @@
 								 
 				 if (x > y && x != y) { x = x, console.log(x)}
 				 	else{ x = y, console.log(y) };
-						
-				
-		
-		</script>
-				 }
-				 	}
-
-	</head>
-
+			</script>
+		</head>
 	<body>
 	</body>
 </html>
