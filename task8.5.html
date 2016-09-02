@@ -1,4 +1,4 @@
-<!-- 8.5. TASK (ДЗ).
+﻿<!-- 8.5. TASK (ДЗ).
 			Ввести число
 			Визначити, чи є число додатнім або від'ємним
 			Знайти більше (менше) з двох чисел -->
@@ -9,19 +9,32 @@
 			<script type="text/javascript">
 				var x = prompt( 'Введіть, будь ласка, число 1', 'число 1'); 
 				var x1 = Math.sign(x);
-				// if (x1 < 1){
-				// 	x = Math.abs(x)};
-					 
 				var y = prompt( 'Введіть, будь ласка, число 2', 'число 2'); 
 				var y1 = Math.sign(y);
-				// if (y1 < 1){
-				// 	y = Math.abs(y)};
-
-				if (x>y){
+				
+				if (x1 == -1) {console.log(x +' - від\'ємне число')}
+				else if (x1 == 0) {console.log('нуль')}
+				else {console.log(x +' - додатнє число')};
+				
+				if (y1 == -1) {console.log(y +' - від\'ємне число')}
+				else if (y1 == 0) {console.log('нуль')}
+				else {console.log(y +' - додатнє число')};
+				
+				
+				
+				if (x1 == -1 && y1 == -1){
+					if (x > y){console.log(y + ' more than ' + x)}
+						else if (y > x) {
+							console.log(x + ' more than ' + y)}
+						else {
+							console.log(y + ' = ' + x)}
+				}else if (x > y){
 					console.log(x + ' more than ' + y)
-				}else if(y>x){
+				}else if(y > x){
 					console.log(y + ' more than ' + x)
 				}else {console.log(y + ' = ' + x)};
+
+//переприсвоить 
 		
 		</script>
 
@@ -64,29 +77,25 @@
 	</body>
 </html>
 
-			<!-- Перерозподілити значення змінних х і у так, щоб в х виявилося більше з цих значень, а в у - менше. 
-			anisimov [4:34 PM]  
-			це залежить від користувача, що він введе, може бути одне більше другого, одне менше другого, одне дорівнює другому
-			kolesnyk_yulja [4:36 PM]  
-			тобто порівняти, і присвоїти х більше з них, а y присвоїти менше
-			 -->
-			 <!-- умова не зрозуміла -->
-<html>
+			<!-- Перерозподілити значення змінних х і у так, щоб в х виявилося більше з цих значень, а в у - менше.   -->
+			
+
 	<head>
 		<title>два числа перерозподіл</title>
 			<script type="text/javascript">
 				var x = prompt( 'Введіть, будь ласка, число 1', 'число 1'); 
-				var y = prompt( 'Введіть, будь ласка, число 2', 'число 2'); 
+				    y = prompt( 'Введіть, будь ласка, число 2', 'число 2'); 
 				
-				if (x>y){
-
-				}else if(y>x){
-
-				}else 
-				
+				// x всегда больше
+								 
+				 if (x > y && x != y) { x = x, console.log(x)}
+				 	else{ x = y, console.log(y) };
+						
 				
 		
 		</script>
+				 }
+				 	}
 
 	</head>
 
